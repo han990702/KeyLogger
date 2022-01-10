@@ -13,7 +13,7 @@ void print_key(short c)
 {
 	if (c == VK_CONTROL || c == VK_SHIFT || c == VK_MENU) return;	//좌우버튼 구분하여 출력할것이므로 무시
 	if (c >= 0x30 && c <= 0x5A) std::cout << (char)c;
-	else if (c >= 0x60 && c <= 0x69) std::cout << c - 0x30;
+	else if (c >= 0x60 && c <= 0x69) std::cout << c - 0x60;
 	else if (c >= 0x70 && c <= 0x87) std::cout << 'F' << c - 111;
 	switch (c)
 	{
