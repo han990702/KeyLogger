@@ -15,7 +15,7 @@ void print_key(short c)
 	if (c >= 0x30 && c <= 0x5A) std::cout << (char)c;
 	else if (c >= 0x60 && c <= 0x69) std::cout << c - 0x60;
 	else if (c >= 0x70 && c <= 0x87) std::cout << 'F' << c - 111;
-	switch (c)
+	else switch (c)
 	{
 	case VK_LBUTTON:
 		std::cout << "[LBUTTON]";
